@@ -1,0 +1,210 @@
+EESchema Schematic File Version 2
+LIBS:DuePi-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DuePi-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title "Design for Dronpi PCB - Based Arduino Due and Raspberry Pi"
+Date "2016-12-22"
+Rev "1.01"
+Comp "http://radioelf.blogspot.com.es/"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4150 1750 950  1300
+U 57F550A2
+F0 "CPU_Due" 60
+F1 "CPU.sch" 60
+F2 "PA[0..29]" B R 5100 1850 60 
+F3 "PB[0..31]" B R 5100 1950 60 
+F4 "PC[0..30]" B R 5100 2050 60 
+F5 "MASTER_RESET" I L 4150 2600 60 
+F6 "XUSB" I L 4150 2500 60 
+F7 "3V3" I R 5100 2350 60 
+F8 "GND" U R 5100 2250 60 
+F9 "D+" B L 4150 2200 60 
+F10 "D-" B L 4150 2100 60 
+F11 "ERASE" I L 4150 2700 60 
+F12 "RX" O L 4150 2300 60 
+F13 "TX" I L 4150 2400 60 
+F14 "UOTGID" I R 5100 2900 60 
+F15 "PD[0..10]" B R 5100 2150 60 
+F16 "UOTGVBOF" O R 5100 2750 60 
+$EndSheet
+$Sheet
+S 7600 4350 950  1350
+U 57F570F3
+F0 "Power_Due" 60
+F1 "POWER.sch" 60
+F2 "USBVCC" I L 7600 5250 60 
+F3 "+5V" B L 7600 4650 60 
+F4 "3V3" O L 7600 4450 60 
+F5 "GND" U L 7600 4550 60 
+F6 "UOTGVBOF" I L 7600 5100 60 
+F7 "Vint" I L 7600 4750 60 
+$EndSheet
+$Sheet
+S 7600 1750 950  1400
+U 57F559BE
+F0 "DronPi_GPIO" 60
+F1 "GPIO.sch" 60
+F2 "PA[0..29]" B L 7600 1850 60 
+F3 "PB[0..31]" B L 7600 1950 60 
+F4 "PC[0..30]" B L 7600 2050 60 
+F5 "3V3" I L 7600 2350 60 
+F6 "GND" U L 7600 2250 60 
+F7 "Vint" O L 7600 2500 60 
+F8 "PD[0..10]" B L 7600 2150 60 
+$EndSheet
+$Sheet
+S 4150 4350 950  1350
+U 57F570F0
+F0 "USB_Due" 60
+F1 "USB.sch" 60
+F2 "MASTER_RESET" O L 4150 4800 60 
+F3 "GND" U R 5100 4550 60 
+F4 "ERASE" O L 4150 4700 60 
+F5 "+5v" B R 5100 4650 60 
+F6 "3V3" I R 5100 4450 60 
+F7 "TX" O L 4150 5000 60 
+F8 "RX" I L 4150 5100 60 
+F9 "XUSB" O L 4150 4900 60 
+F10 "D-" B L 4150 5300 60 
+F11 "D+" B L 4150 5200 60 
+F12 "USBVCC" O R 5100 5250 60 
+F13 "UOTGID" O R 5100 5100 60 
+$EndSheet
+Wire Bus Line
+	7600 1850 5100 1850
+Wire Bus Line
+	7600 1950 5100 1950
+Wire Bus Line
+	7600 2050 5100 2050
+Wire Wire Line
+	5100 2250 7600 2250
+Wire Wire Line
+	5100 2350 7600 2350
+Wire Wire Line
+	5100 4650 7600 4650
+Wire Wire Line
+	5100 4550 7600 4550
+Wire Wire Line
+	5100 4450 7600 4450
+Wire Wire Line
+	7600 5250 5100 5250
+Wire Wire Line
+	6200 2350 6200 4450
+Connection ~ 6200 4450
+Connection ~ 6200 2350
+Wire Wire Line
+	6300 4550 6300 2250
+Connection ~ 6300 2250
+Connection ~ 6300 4550
+Wire Wire Line
+	7600 2500 6400 2500
+Wire Wire Line
+	5100 2900 6000 2900
+Wire Wire Line
+	6000 2900 6000 5100
+Wire Wire Line
+	7600 4750 6400 4750
+Wire Wire Line
+	6400 4750 6400 2500
+Wire Wire Line
+	4150 4700 4050 4700
+Wire Wire Line
+	4050 4700 4050 2700
+Wire Wire Line
+	4050 2700 4150 2700
+Wire Wire Line
+	4150 2600 3950 2600
+Wire Wire Line
+	3950 2600 3950 4800
+Wire Wire Line
+	3950 4800 4150 4800
+Wire Wire Line
+	4150 4900 3850 4900
+Wire Wire Line
+	3850 4900 3850 2500
+Wire Wire Line
+	3850 2500 4150 2500
+Wire Wire Line
+	4150 2400 3750 2400
+Wire Wire Line
+	3750 2400 3750 5000
+Wire Wire Line
+	3750 5000 4150 5000
+Wire Wire Line
+	4150 5100 3650 5100
+Wire Wire Line
+	3650 5100 3650 2300
+Wire Wire Line
+	3650 2300 4150 2300
+Wire Wire Line
+	4150 2200 3550 2200
+Wire Wire Line
+	3550 2200 3550 5200
+Wire Wire Line
+	3550 5200 4150 5200
+Wire Wire Line
+	4150 5300 3450 5300
+Wire Wire Line
+	3450 5300 3450 2100
+Wire Wire Line
+	3450 2100 4150 2100
+Wire Bus Line
+	7600 2150 5100 2150
+$Comp
+L OSHW-LOGOL M1
+U 1 1 580A53A9
+P 9150 6800
+F 0 "M1" H 9150 6800 45  0001 C CNN
+F 1 "OSHW-LOGOL" H 9150 6800 45  0001 C CNN
+F 2 "Symbols:OSHW-Logo2_7.3x6mm_SilkScreen" H 9180 6950 20  0001 C CNN
+F 3 "" H 9150 6800 60  0001 C CNN
+	1    9150 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5100 5100 5100
+Wire Wire Line
+	7600 5100 6100 5100
+Wire Wire Line
+	6100 5100 6100 2750
+Wire Wire Line
+	6100 2750 5100 2750
+$EndSCHEMATC
