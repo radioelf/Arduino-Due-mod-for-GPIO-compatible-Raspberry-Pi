@@ -1,4 +1,4 @@
-# Arduino-Due-mod-for-GPIO-compatible-Raspberry-Pi
+# Arduino Due mod for GPIO compatible Raspberry Pi
 Creative Commons License Disclaimer
 
 UNLESS OTHERWISE MUTUALLY AGREED TO BY THE PARTIES IN WRITING, LICENSOR OFFERS THE WORK AS-IS AND MAKES NO REPRESENTATIONS 
